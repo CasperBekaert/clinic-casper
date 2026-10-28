@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+body { margin: 0; font: 1rem/1.6 system-ui, sans-serif; color: #183a30; background: #f6f7ef; }
+img { display: block; max-width: 100%; height: auto; }
+header, main, footer { width: min(100%, 68rem); margin: auto; padding: 1rem; }
+header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; border-bottom: 1px solid #c6d2c5; }
+a { color: inherit; text-underline-offset: .25em; }
+.brand { font-size: 1.4rem; font-weight: 800; text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: .5rem 1rem; }
+section { padding: 2rem 0; scroll-margin-top: 1rem; }
+.hero { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: center; gap: 2rem; padding: 3rem 0; }
+.hero img { width: 100%; border-radius: 1rem; }
+h1 { font-size: clamp(2.2rem, 6vw, 4rem); line-height: 1.1; letter-spacing: -.04em; margin: .5rem 0 1rem; }
+h2 { font-size: 1.8rem; line-height: 1.2; }
+h3 { margin-top: 0; }
+.eyebrow { font-size: .8rem; font-weight: 700; letter-spacing: .12em; }
+.button, button { display: inline-block; border: 0; border-radius: .4rem; background: #214f3e; color: white; padding: .85rem 1.2rem; font: inherit; font-weight: 600; cursor: pointer; text-decoration: none; }
+.button:hover, button:hover { background: #123b2a; }
+a:focus-visible, input:focus-visible, select:focus-visible, button:focus-visible { outline: 3px solid #b36309; outline-offset: 3px; }
+.prices { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.prices div, .card { padding: 1.25rem; background: white; border: 1px solid #c6d2c5; border-radius: .75rem; }
+dd { margin: .5rem 0 0; font-size: 1.8rem; font-weight: 700; }
+.card, form { max-width: 32rem; }
+label { display: block; font-weight: 600; margin: 1rem 0 .3rem; }
+input, select { width: 100%; border: 1px solid #738b7f; border-radius: .35rem; padding: .7rem; font: inherit; background: white; color: #183a30; }
+input, select, button { max-width: 100%; }
+form button { margin-top: 1rem; }
+.estimate { font-size: 1.2rem; }
+output { font-weight: 800; }
+footer { border-top: 1px solid #c6d2c5; font-size: .9rem; }
+@media (max-width: 40rem) { .hero, .prices { grid-template-columns: 1fr; } .hero { gap: 1rem; padding: 2rem 0; } }
